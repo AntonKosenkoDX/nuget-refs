@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>MyNugetMaui</id>
+        <version>1.0.0</version>
+        <title>MyNugetMaui</title>
+        <authors>Me</authors>
+        <description>MyNugetMaui</description>
+        <references>
+            <group targetFramework="net7.0">
+                <reference file="MyLib.dll"/>
+            </group>
+            <group targetFramework="net7.0-android31.0">
+                <reference file="MyLib.dll"/>
+            </group>
+            <group targetFramework="net7.0-ios15.4">
+                <reference file="MyLib.dll"/>
+            </group>
+        </references>
+        <dependencies>
+            <group targetFramework="net7.0"/>
+            <group targetFramework="net7.0-ios15.4"/>
+            <group targetFramework="net7.0-android31.0"/>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src=".\..\MyLib\bin\Debug\net7.0\MyLib.dll" target="ref\net7.0"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0\MyLib.dll" target="lib\net7.0"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0\MyUtilities.dll" target="lib\net7.0"/>
+
+        <file src=".\..\MyLib\bin\Debug\net7.0-ios\MyLib.dll" target="ref\net7.0-ios15.4"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0-ios\MyLib.dll" target="lib\net7.0-ios15.4"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0-ios\MyUtilities.dll" target="lib\net7.0-ios15.4"/>
+
+        <file src=".\..\MyLib\bin\Debug\net7.0-android\MyLib.dll" target="ref\net7.0-android31.0"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0-android\MyLib.dll" target="lib\net7.0-android31.0"/>
+        <file src=".\..\MyUtilities\bin\Debug\net7.0-android\MyUtilities.dll" target="lib\net7.0-android31.0"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0-android\MyLib.aar" target="lib\net7.0-android31.0"/>
+        <file src=".\..\MyUtilities\bin\Debug\net7.0-android\MyUtilities.aar" target="lib\net7.0-android31.0"/>
+    </files>
+</package>

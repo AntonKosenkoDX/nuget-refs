@@ -1,0 +1,9 @@
+rm -rf MyApp/bin MyApp/obj MyLib/bin MyLib/obj MyUtilities/bin MyUtilities/obj MyConsoleApp/bin MyConsoleApp/obj MyNuget/*.nupkg
+#dotnet nuget locals -c all
+
+dotnet build MyUtilities/MyUtilities.csproj
+dotnet build MyLib/MyLib.csproj
+nuget pack MyNuget/MyNuget.nuspec -OutputDirectory MyNuget/
+
+dotnet build MyApp/MyApp.csproj
+dotnet build MyConsoleApp/MyConsoleApp.csproj

@@ -9,15 +9,12 @@
         <references>
             <group targetFramework="net7.0">
                 <reference file="MyLib.dll"/>
-                <reference file="MyUtilities.dll"/>
             </group>
             <group targetFramework="net7.0-android33.0">
                 <reference file="MyLib.dll"/>
-                <reference file="MyUtilities.dll"/>
             </group>
             <group targetFramework="net7.0-ios15.4">
                 <reference file="MyLib.dll"/>
-                <reference file="MyUtilities.dll"/>
             </group>
         </references>
         <dependencies>

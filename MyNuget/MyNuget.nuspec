@@ -9,12 +9,15 @@
         <references>
             <group targetFramework="net7.0">
                 <reference file="MyLib.dll"/>
+                <reference file="MyUtilities.dll"/>
             </group>
             <group targetFramework="net7.0-android33.0">
                 <reference file="MyLib.dll"/>
+                <reference file="MyUtilities.dll"/>
             </group>
             <group targetFramework="net7.0-ios15.4">
                 <reference file="MyLib.dll"/>
+                <reference file="MyUtilities.dll"/>
             </group>
         </references>
         <dependencies>
@@ -24,18 +27,21 @@
         </dependencies>
     </metadata>
     <files>
-        <file src=".\..\MyLib\bin\Debug\net7.0\MyLib.dll" target="ref\net7.0"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0\ref\MyLib.dll" target="ref\net7.0"/>
         <file src=".\..\MyLib\bin\Debug\net7.0\MyLib.dll" target="lib\net7.0"/>
-        <file src=".\..\MyLib\bin\Debug\net7.0\MyUtilities.dll" target="lib\net7.0"/>
+        <file src=".\..\MyUtilities\bin\Debug\net7.0\ref\MyUtilities.dll" target="ref\net7.0"/>
+        <file src=".\..\MyUtilities\bin\Debug\net7.0\MyUtilities.dll" target="lib\net7.0"/>
 
-        <file src=".\..\MyLib\bin\Debug\net7.0-ios\MyLib.dll" target="ref\net7.0-ios15.4"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0-ios\ref\MyLib.dll" target="ref\net7.0-ios15.4"/>
         <file src=".\..\MyLib\bin\Debug\net7.0-ios\MyLib.dll" target="lib\net7.0-ios15.4"/>
-        <file src=".\..\MyLib\bin\Debug\net7.0-ios\MyUtilities.dll" target="lib\net7.0-ios15.4"/>
+        <file src=".\..\MyUtilities\bin\Debug\net7.0-ios\ref\MyUtilities.dll" target="ref\net7.0-ios15.4"/>
+        <file src=".\..\MyUtilities\bin\Debug\net7.0-ios\MyUtilities.dll" target="lib\net7.0-ios15.4"/>
 
-        <file src=".\..\MyLib\bin\Debug\net7.0-android\MyLib.dll" target="ref\net7.0-android33.0"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0-android\ref\MyLib.dll" target="ref\net7.0-android33.0"/>
         <file src=".\..\MyLib\bin\Debug\net7.0-android\MyLib.dll" target="lib\net7.0-android33.0"/>
+        <file src=".\..\MyUtilities\bin\Debug\net7.0-android\ref\MyUtilities.dll" target="ref\net7.0-android33.0"/>
         <file src=".\..\MyUtilities\bin\Debug\net7.0-android\MyUtilities.dll" target="lib\net7.0-android33.0"/>
-        <file src=".\..\MyLib\bin\Debug\net7.0-android\MyLib.aar" target="lib\net7.0-android33.0"/>
-        <file src=".\..\MyUtilities\bin\Debug\net7.0-android\MyUtilities.aar" target="lib\net7.0-android33.0"/>
+        <file src=".\..\MyLib\bin\Debug\net7.0-android\MyLib.aar" target="ref\net7.0-android33.0"/>
+        <file src=".\..\MyUtilities\bin\Debug\net7.0-android\MyUtilities.aar" target="ref\net7.0-android33.0"/>
     </files>
 </package>
